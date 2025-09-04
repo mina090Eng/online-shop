@@ -28,12 +28,21 @@ header {
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
+
+  height: 400px; /* كل الكروت نفس الطول */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* يوزع المحتوى جوه الكارت */
 }
 
 .product img {
   max-width: 100%;
+  max-height: 200px; /* نتحكم في أقصى ارتفاع للصورة */
   border-radius: 8px;
+  object-fit: contain; /* يحافظ على نسبة الصورة من غير ما تتقص */
+  margin: 0 auto;
 }
+
 
 .price {
   margin: 10px 0;
@@ -209,4 +218,5 @@ footer {
   margin-top: 10px;
   font-size: 12px;
   color: #9ca3af;
+
 }
