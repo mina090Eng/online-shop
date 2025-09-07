@@ -1,6 +1,4 @@
-/* =====================
-   تنسيقات صفحة المنتجات
-===================== */
+/* ===================== تنسيقات صفحة المنتجات ===================== */
 body {
   font-family: Arial, sans-serif;
   background: #7286af;
@@ -28,21 +26,23 @@ header {
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
-
-  height: 400px; /* كل الكروت نفس الطول */
+  height: 400px;
+  /* كل الكروت نفس الطول */
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* يوزع المحتوى جوه الكارت */
+  justify-content: space-between;
+  /* يوزع المحتوى جوه الكارت */
 }
 
 .product img {
   max-width: 100%;
-  max-height: 200px; /* نتحكم في أقصى ارتفاع للصورة */
+  max-height: 200px;
+  /* نتحكم في أقصى ارتفاع للصورة */
   border-radius: 8px;
-  object-fit: contain; /* يحافظ على نسبة الصورة من غير ما تتقص */
+  object-fit: contain;
+  /* يحافظ على نسبة الصورة من غير ما تتقص */
   margin: 0 auto;
 }
-
 
 .price {
   margin: 10px 0;
@@ -71,11 +71,10 @@ header {
   background: #15803d;
 }
 
-/* =====================
-   تنسيقات صفحة التواصل
-===================== */
+/* ===================== تنسيقات صفحة التواصل ===================== */
 .contact-section {
   max-width: 600px;
+
   margin: 40px auto;
   background: white;
   padding: 20px;
@@ -83,8 +82,15 @@ header {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
-.contact-section h2 {
+.contact-section h3 {
   margin-bottom: 10px;
+  text-align: center;
+
+}
+
+.contact-section h1 {
+  text-align: center;
+
 }
 
 .contact-form {
@@ -167,13 +173,12 @@ header {
 }
 
 .search-box input {
-  width: 60%;
+  width: 90%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 6px;
   font-size: 16px;
 }
-
 
 footer {
   background: #111827;
@@ -218,5 +223,168 @@ footer {
   margin-top: 10px;
   font-size: 12px;
   color: #9ca3af;
+}
 
+.shake {
+  animation: shake 0.4s;
+}
+
+/* تغيير لون مؤقت للزرار */
+.clicked {
+  background-color: #22c55e !important;
+  transition: background 0.3s;
+}
+
+.back-to-shop {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.back-to-shop a {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.back-to-shop a:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+
+
+
+
+/* ====== Header / Navbar ====== */
+header {
+  background: #2c3e50;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+header .logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #f39c12;
+}
+
+
+
+.btns {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.btn {
+  padding: 10px 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+  color: white;
+}
+
+
+/* ====== About Page ====== */
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 10%;
+  gap: 40px;
+  background: #fff;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h1 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.about-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.about-img {
+  flex: 1;
+  text-align: center;
+}
+
+.about-img img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Features */
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 10%;
+  background: #f9f9f9;
+}
+
+.feature {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  flex: 1;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+}
+
+.feature h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #e67e22;
+}
+
+.feature p {
+  color: #555;
+  font-size: 15px;
 }
